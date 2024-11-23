@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %} Вхід {% endblock %}
+
+{% block main %}
+<div class="container">
+  <div class="auth-form">
+    <form action="" method="post">
+      <h2>Вхід</h2>
+
+      <div class="auth-input">
+        <label for="login">Логін:</label>
+        <input id="login" name="login" required />
+      </div>
+
+      <div class="auth-input">
+        <label for="password">Пароль:</label>
+        <input id="password" name="password" type="password" required />
+      </div>
+
+      <button class="create-ad-button" type="submit">Увійти</button>
+      <a class="auth-link" href="/register">Зареєструватись</a>
+    </form>
+  </div>
+</div>
+{% endblock %}

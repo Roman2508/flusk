@@ -1,0 +1,11 @@
+        id
+        title
+        description
+        price
+        photo
+        mileage
+        engine
+        color
+        transmission
+        fuel
+        created_at

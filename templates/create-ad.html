@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+
+{% block title %} Створити оголошення {% endblock %}
+
+{% block main %}
+
+<div class="container">
+  <h1 class="createa-ad-title">Створити оголошення</h1>
+
+  <form action="" method="post" class="create-ad-form">
+    <div class="createa-ad-block">
+      <label for="title">Вкажіть назву оголошення:</label>
+      <input id="title" name="title" required />
+    </div>
+
+    <div class="createa-ad-block">
+      <label for="description">Опис:</label>
+      <textarea id="description" name="description" required></textarea>
+    </div>
+
+    <div class="createa-ad-block">
+      <label for="price">Ціна:</label>
+      <input id="price" name="price" type="number" required />
+    </div>
+
+    <div class="createa-ad-block">
+      <label for="photo">Фото:</label>
+      <input id="photo" name="photo" type="url" required />
+    </div>
+
+    <div class="createa-ad-block">
+      <label for="mileage">Пробіг (км.):</label>
+      <input id="mileage" name="mileage" type="number" required />
+    </div>
+
+    <div class="createa-ad-block">
+      <label for="engine">Об'єм двигуна:</label>
+      <input id="engine" name="engine" type="number" required />
+    </div>
+
+    <div class="createa-ad-block">
+      <label for="color">Колір:</label>
+      <input id="color" name="color" required />
+    </div>
+
+    <div class="createa-ad-block">
+      <label for="transmission">Коробка передач:</label>
+      <select id="transmission" name="transmission" required>
+        <option>Механічна</option>
+        <option>Автоматична</option>
+        <option>Варіатор</option>
+        <option>Адаптивна</option>
+      </select>
+    </div>
+
+    <div class="createa-ad-block">
+      <label for="fuel">Тип палива:</label>
+      <select id="fuel" name="fuel" required>
+        <option>Бензин</option>
+        <option>Дизель</option>
+        <option>Газ</option>
+        <option>Електро</option>
+        <option>Гібрид</option>
+        <option>Інший</option>
+      </select>
+    </div>
+
+    <div class="createa-ad-block">
+      <button class="create-ad-button" type="submit">Опублікувати</button>
+    </div>
+  </form>
+</div>
+{% endblock %}
